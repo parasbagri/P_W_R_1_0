@@ -2,21 +2,25 @@
 import { useState } from "react";
 
 const ConditionalRendring = () =>{
-    const [isEditing, setIsEditaing] = useState(false)
+    const [todos, setTodoes] = useState(['todo1', 'todo2'])
 
     const booleanMethod = () =>{
-        setIsEditaing(!isEditing)
+        setIsEditaing(setTodoes(...todos, "One More"))
     }
 
     return (
         <div>
           <p>Conditional Rendring:</p>  
-          {
-            (isEditing)? <input/> : <p>Please Wailt...</p>
-          }
-          <button onClick={booleanMethod}>Click to change</button> 
+          {todos.map((to)=>{
+            <ul>
+                <li>{to}</li>
+                <li>{to}</li>
+            </ul>
+
+          })}
+          
+          <button onClick={booleanMethod}>Add Todos</button> 
         </div>
     )
 } 
-
 export default ConditionalRendring
