@@ -10,7 +10,10 @@ const ConditionalRendring = () =>{
 
     return (
         <div>
-          <p>Thodo:{isEditing}</p>  
+          <p>Conditional Rendring:</p>  
+          {
+            (isEditing)? <input/> : <p>Please Wailt...</p>
+          }
           <button onClick={booleanMethod}>Click to change</button> 
         </div>
     )
