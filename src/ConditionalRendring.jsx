@@ -11,7 +11,7 @@ const ConditionalRendring = () =>{
     return (
         <div>
           <p>Thodo:{isEditing}</p>  
-          <button onClick={booleanMethod}></button> 
+          <button onClick={booleanMethod}>Click to change</button> 
         </div>
     )
 } 
