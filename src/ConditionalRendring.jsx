@@ -11,16 +11,13 @@ const ConditionalRendring = () =>{
     return (
         <div>
           <p>Conditional Rendring:</p>  
-          {todos.map((to)=>{
-            return(
-            <ul>
-                <li>{to}</li>
-                <li>{to}</li>
-            </ul>)
-
-          })}
+          <ul>
+              {todos.map((to)=> <li>{to}</li>)}
+              <button onClick={booleanMethod}>Add Todo</button>
+          </ul>
+         
           
-          <button onClick={booleanMethod}>Add Todos</button> 
+          
         </div>
     )
 } 
