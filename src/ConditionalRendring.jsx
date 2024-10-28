@@ -12,10 +12,11 @@ const ConditionalRendring = () =>{
         <div>
           <p>Conditional Rendring:</p>  
           {todos.map((to)=>{
+            return(
             <ul>
                 <li>{to}</li>
                 <li>{to}</li>
-            </ul>
+            </ul>)
 
           })}
           
