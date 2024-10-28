@@ -5,7 +5,7 @@ const ConditionalRendring = () =>{
     const [todos, setTodoes] = useState(['todo1', 'todo2'])
 
     const booleanMethod = () =>{
-        setTodoes(...todos, "One More")
+        setTodoes(...todos, 'One More')
     }
 
     return (
@@ -21,4 +21,4 @@ const ConditionalRendring = () =>{
         </div>
     )
 } 
-export default ConditionalRendring
+export default ConditionalRendring;
